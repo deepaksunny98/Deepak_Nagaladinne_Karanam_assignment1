@@ -1,0 +1,10 @@
+extends layout
+
+block content
+  h1 Device List
+  ul
+    each device in devices
+        li  
+            h4 Name: #{device.name}
+            h4 Version: #{device.version}
+    
